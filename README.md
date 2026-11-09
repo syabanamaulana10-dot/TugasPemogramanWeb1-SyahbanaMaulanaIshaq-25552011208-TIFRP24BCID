@@ -1,10 +1,10 @@
 # Website Syahbana Maulana Ishaq 25552011208 TIF RP 24B CID
 
 ## Tampilan halaman
-![Tampilan website](screenshot-halaman.png)
+![Tampilan website](Screenshot-halaman.png)
 
 ## Tanggal dan waktu
-![Tanggal dan waktu](screenshot-waktu.png)
+![Tanggal dan waktu](Screenshot-waktu.png)
 
 ## Pesan alert
-![Pesan alert](screenshot-alert.png)
+![Pesan alert](Screenshot-alert.png)
