@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syahbana Maulana Ishaq</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background-color: #b4acc4;
+      background-image: url("Image/flowing-purple-mountain-spiral-bright-imagination-generated-by-ai.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: #3a5f92;
+    }
+
+    main {
+      width: min(100%, 640px);
+      padding: 40px;
+      background: rgba(31, 28, 28, 0.699);
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(170, 58, 38, 0.25);
+    }
+
+    h1 {
+      color: #c4153b;
+    }
+
+    p {
+      line-height: 1.7;
+      color:#f1ebe9;
+    }
+
+    button {
+      margin: 8px 8px 0 0;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #7038ca;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7038ca;
+    }
+
+    #waktu {
+      color: #7038ca;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #f5f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Halo, saya Syahbana Maulana Ishaq</h1>
+
+    <p>
+      Saya adalah mahasiswa Teknik Informatika dengan NIM 25552011208.
+      Saat ini saya sedang berlatih membuat website.
+    </p>
+
+    <p>
+      Di waktu luang, saya suka bermain dan menonton sepak bola, bermain game,
+      menonton film, serta menggambar.
+    </p>
+
+    <p>
+      Website ini dibuat sebagai latihan menggunakan HTML, CSS, dan JavaScript.
+      Tschüss!
+    </p>
+
+    <button type="button" onclick="tampilkanWaktu()">
+      Tampilkan tanggal dan waktu
+    </button>
+
+    <button type="button" onclick="tampilkanPesan()">
+      Klik di sini
+    </button>
+
+    <p id="waktu" aria-live="polite"></p>
+  </main>
+
+  <script>
+    function tampilkanWaktu() {
+      const sekarang = new Date();
+
+      document.getElementById("waktu").textContent =
+        sekarang.toLocaleString("id-ID", {
+          dateStyle: "full",
+          timeStyle: "medium"
+        });
+    }
+
+    function tampilkanPesan() {
+      alert("Halo, terima kasih sudah mengunjungi halaman saya!");
+    }
+  </script>
+</body>
+</html>
